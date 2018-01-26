@@ -22,6 +22,8 @@ exports.welcome = function(request, response) {
     });
 }
 
+
+
 exports.error = function(request, response) {
     console.log("Nie wiem co robić.");
     response.write("404 :(");
@@ -32,6 +34,14 @@ exports.show = function(request, response) {
     fs.readFile("test.png", "binary", function(error, file) {
         response.writeHead(200, {"Content-Type": "image/png"});
         response.write(file, "binary");
+        response.end();
+    });
+}
+
+exports.show1 = function(request, response) {
+    fs.readFile('templates/start.css', function(err, css) {
+        response.writeHead(200, {"Content-Type": "text/css; charset=utf-8"});
+        response.write(css);
         response.end();
     });
 }
