@@ -38,8 +38,8 @@ exports.show = function(request, response) {
     });
 }
 
-exports.show1 = function(request, response) {
-    fs.readFile('templates/start.css', function(err, css) {
+exports.style = function(request, response) {
+    fs.readFile('templates/style.css', function(err, css) {
         response.writeHead(200, {"Content-Type": "text/css; charset=utf-8"});
         response.write(css);
         response.end();

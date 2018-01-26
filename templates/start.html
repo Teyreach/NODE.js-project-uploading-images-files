@@ -1,17 +1,25 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link rel="stylesheet" type="text/css" href="templates/start.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/style">
     </head>
     <body>
-        <h1 class="title">Wgraj plik</h1>
+		<h1 class="title">Strona do uploadowania plików/obrazków</h1>
+        <h2 class="title-1">Wgraj plik</h2>
         <form action="/upload" enctype="multipart/form-data" method="post">
+		<div class="padd">
             <label>Tytuł pliku</label>
             <input type="text" name="title">
             <br>
+			<div class="paddd">
             <label>Plik</label>
             <input type="file" name="upload" multiple="multiple"><br>
+			<div class="paddd">
             <input type="submit" value="Wyślij">
+			</div>
+			</div>
+			</div>
         </form>
     </body>
 </html>

@@ -1,0 +1,19 @@
+body{
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+}
+.title-1{
+	text-align: left;
+	margin: 0 0 0 40px;
+}
+.title{
+	text-align: center;
+	margin: 20px 0 0 0;
+}
+.padd{
+	margin: 0 0 0 40px;
+	padding-top: 20px;
+}
+.paddd{
+	padding: 10px 0 10px 0;
+}
